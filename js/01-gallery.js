@@ -37,7 +37,7 @@ function onGalleryListClick(evt) {
   if (evt.target.nodeName !== "IMG") {
     return;
   }
-  imgUrl = evt.target.dataset;
+  imgUrl = evt.target.dataset.source;
   const instance = basicLightbox.create(
     `
     <div class="modal">
